@@ -10,7 +10,7 @@ import CTASection from '@/components/CTASection';
 export default function Home() {
   return (
 		<>
-			<section className="bg-gray-200">
+			<section className="bg-[#F7F7F5] py-8">
 				<div className="max-w-7xl  mx-auto ">
 					<HeroCarousel />
 				</div>
