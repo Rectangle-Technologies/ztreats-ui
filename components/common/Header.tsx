@@ -36,7 +36,7 @@ export default function Header() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}

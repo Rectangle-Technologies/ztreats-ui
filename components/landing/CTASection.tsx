@@ -1,4 +1,4 @@
-import { PaddedButton } from "./PaddedButton";
+import { PaddedButton } from "../PaddedButton";
 
 export default function CTASection() {
 	return (

@@ -1,11 +1,11 @@
-import HeroCarousel from '@/components/HeroCarousel';
-import ProductGrid from '@/components/ProductGrid';
-import FeedbackSection from '@/components/FeedbackSection';
-import PopularMenu from '@/components/PopularMenu';
-import WhyZTreats from '@/components/WhyZTreats';
-import HampersGifting from '@/components/HampersGifting';
-import ClientsTestimonials from '@/components/ClientsTestimonials';
-import CTASection from '@/components/CTASection';
+import HeroCarousel from '@/components/landing/HeroCarousel';
+import ProductGrid from '@/components/landing/ProductGrid';
+import FeedbackSection from '@/components/landing/FeedbackSection';
+import PopularMenu from '@/components/landing/PopularMenu';
+import WhyZTreats from '@/components/landing/WhyZTreats';
+import HampersGifting from '@/components/landing/HampersGifting';
+import ClientsTestimonials from '@/components/landing/ClientsTestimonials';
+import CTASection from '@/components/landing/CTASection';
 
 export default function Home() {
   return (

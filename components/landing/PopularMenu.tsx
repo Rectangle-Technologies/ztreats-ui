@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Heart, Star } from "lucide-react";
 import { PaddedButton } from "@/components/PaddedButton";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 interface ProductItem {
 	id: number;
