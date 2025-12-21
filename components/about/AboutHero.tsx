@@ -1,12 +1,5 @@
 import Image from "next/image";
 import { PaddedButton } from "@/components/PaddedButton";
-import { Amaranth } from "next/font/google";
-
-const amaranth = Amaranth({
-	subsets: ["latin"],
-	weight: ["400", "700"],
-	variable: "--font-amaranth",
-});
 
 export default function AboutHero() {
 	return (
@@ -15,7 +8,7 @@ export default function AboutHero() {
 				<div className="flex items-center h-full w-full relative">
 					{/* Left Content */}
 					<div className={`z-10 text-5xl md:text-6xl font-bold text-[#D9560E] mb-6 leading-tight`}>
-						<div className={`${amaranth.className}`}>
+						<div className={`font-[amaranth]`}>
 							<h1 className="">More than a brand</h1>
 							<h1 className="">A way of better living</h1>
 						</div>

@@ -10,7 +10,7 @@ export default function WhatZStandsFor() {
 					{/* Left Content - Teal Background */}
 					<div className="w-[55%] text-white px-8 sm:px-12 py-12 md:py-16 flex flex-col justify-center">
 						<div>
-							<h2 className="text-3xl md:text-4xl font-bold mb-2">
+							<h2 className="text-3xl md:text-4xl font-bold mb-2 font-[amaranth]">
 								What <span className="text-white">&quot;Z&quot;</span> Stands for
 								<span className="text-[#FFD46C] block h-1 w-12 mt-2"></span>
 							</h2>
