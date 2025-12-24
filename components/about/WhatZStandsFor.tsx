@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const images = ["/assets/about/product-1.jpg", "/assets/about/product-2.png", "/assets/about/product-3.jpg", "/assets/about/product-4.jpg", "/assets/about/product-5.jpg", "/assets/about/product-6.png"];
 
@@ -6,9 +7,9 @@ export default function WhatZStandsFor() {
 	return (
 		<section className="w-full bg-[#055066]">
 			<div className="mx-auto max-w-7xl px-0">
-				<div className="flex min-h-screen">
+				<div className="flex flex-col lg:flex-row min-h-screen">
 					{/* Left Content - Teal Background */}
-					<div className="w-[55%] text-white px-8 sm:px-12 py-12 md:py-16 flex flex-col justify-center">
+					<div className="w-full lg:w-[55%] text-white px-8 sm:px-12 py-12 md:py-16 flex flex-col justify-center">
 						<div>
 							<h2 className="text-3xl md:text-4xl font-bold mb-2 font-[amaranth]">
 								What <span className="text-white">&quot;Z&quot;</span> Stands for
@@ -45,8 +46,8 @@ export default function WhatZStandsFor() {
 						</div>
 					</div>
 
-					{/* Right Content - Image Grid */}
-					<div className="w-[45%] flex-1 px-4 sm:px-8">
+					{/* Right Content - Image Grid (Desktop) / Marquee (Mobile) */}
+					<div className="w-full lg:w-[45%] hidden lg:flex px-4 sm:px-8">
 						<div className="grid grid-cols-2 h-full gap-4" style={{ width: "100%" }}>
 							<div className="h-full flex flex-col gap-2">
 								{/* Row 1, Col 1: 30% */}
@@ -80,6 +81,27 @@ export default function WhatZStandsFor() {
 								</div>
 							</div>
 						</div>
+					</div>
+
+					{/* Mobile Marquee */}
+					<div className="w-full lg:hidden px-4 sm:px-8 space-y-4 pb-6">
+						{/* Row 1 */}
+						<Marquee speed={50} pauseOnHover={true} gradient={false}>
+							{[images[0], images[2], images[4], images[0], images[2], images[4]].map((image, index) => (
+								<div key={`row1-${index}`} className="shrink-0 mx-2 w-60 h-40">
+									<Image src={image} alt={`Product Row 1 ${index + 1}`} width={240} height={160} className="w-full h-full rounded-lg object-cover" />
+								</div>
+							))}
+						</Marquee>
+
+						{/* Row 2 */}
+						<Marquee speed={30} pauseOnHover={true} gradient={false}>
+							{[images[1], images[3], images[5], images[1], images[3], images[5]].map((image, index) => (
+								<div key={`row2-${index}`} className="shrink-0 mx-2 w-60 h-40">
+									<Image src={image} alt={`Product Row 2 ${index + 1}`} width={240} height={160} className="w-full h-full rounded-lg object-cover" />
+								</div>
+							))}
+						</Marquee>
 					</div>
 				</div>
 			</div>
