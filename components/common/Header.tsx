@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <header className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="mx-auto max-w-7xl px-6 sm:px-12 xl:px-0">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -58,7 +58,7 @@ export default function Header() {
                 href={item.href}
                 className={` font-medium transition-colors ${
                   isActive(item.href)
-                    ? 'text-foreground'
+                    ? 'text-foreground font-semibold'
                     : 'text-gray-600 hover:text-foreground'
                 }`}
               >
@@ -87,7 +87,7 @@ export default function Header() {
                     href={item.href}
                     className={`text-sm font-medium transition-colors ${
                       isActive(item.href)
-                        ? 'text-foreground'
+                        ? 'text-foreground font-semibold'
                         : 'text-gray-600 hover:text-foreground'
                     }`}
                     onClick={() => setOpen(false)}

@@ -4,7 +4,7 @@ import { PaddedButton } from "@/components/PaddedButton";
 export default function AboutHero() {
 	return (
 		<section className="w-full bg-[#FFD46C] relative overflow-hidden">
-			<div className="mx-auto h-screen max-w-7xl px-6 sm:px-12 py-4">
+			<div className="mx-auto h-[70vh] max-w-7xl px-6 sm:px-12 py-4">
 				<div className="flex items-center h-full w-full relative">
 					{/* Left Content */}
 					<div className={`z-10 text-5xl md:text-6xl font-bold text-[#D9560E] mb-6 leading-tight`}>

@@ -1,0 +1,48 @@
+import { ProductItem } from "@/types/product";
+
+export const products: ProductItem[] = [
+	{
+		id: 1,
+		name: "Cashew Nuts",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/cashew-package.png",
+		price: 200,
+		rating: 5.0,
+		reviews: 10,
+		inStock: true,
+	},
+	{
+		id: 2,
+		name: "Cashew Nuts",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/cashew-package.png",
+		price: 200,
+		rating: 5.0,
+		reviews: 10,
+		inStock: false,
+	},
+	{
+		id: 3,
+		name: "Cashew Nuts",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/cashew-package.png",
+		price: 200,
+		originalPrice: 400,
+		discount: 50,
+		rating: 5.0,
+		reviews: 10,
+		inStock: true,
+	},
+	{
+		id: 4,
+		name: "Cashew Nuts",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/cashew-package.png",
+		price: 200,
+		originalPrice: 400,
+		discount: 50,
+		rating: 5.0,
+		reviews: 10,
+		inStock: true,
+	},
+];
