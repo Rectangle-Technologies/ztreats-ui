@@ -45,7 +45,7 @@ export default function HampersGifting() {
 			<div className="mx-auto max-w-7xl">
 				{/* Header */}
 				<div className="flex items-center gap-3 mb-8">
-					<h2 className="text-4xl sm:text-5xl font-bold text-black">Hampers & Gifting</h2>
+					<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] text-black">Hampers & Gifting</h2>
 					<Image src="/assets/landing-page/hamperstar.png" height={200} width={200} alt="Circle" className="w-12 h-12 -ml-4 -mt-4"/>
 				</div>
 

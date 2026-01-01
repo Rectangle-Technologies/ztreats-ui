@@ -12,7 +12,8 @@ interface ProductCard {
 const products: ProductCard[] = [
 	{
 		id: 1,
-		title: "Crunch you can trust.",
+		title: "Crunch you",
+		subtitle:"can trust.",
 		image: "/assets/landing-page/a79911cdd730d226bd0c7b4fd9670d617072ecc9.jpg",
 		overlay: true,
 	},
@@ -74,7 +75,8 @@ export default function ProductGrid() {
 										<div className="absolute inset-0 bg-black/30" />
 										<div className="absolute inset-0 flex items-center justify-center px-4">
 											<div className="bg-white/5 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20">
-												<p className="text-white text-center font-semibold text-base sm:text-lg">{products[0].title}</p>
+												<p className="text-white text-center font-normal text-base sm:text-lg">{products[0].title}</p>
+										{products[0].subtitle && <p className="text-white/90 font-normal text-base sm:text-lg text-center">{products[0].subtitle}</p>}
 											</div>
 										</div>
 									</div>
@@ -84,7 +86,8 @@ export default function ProductGrid() {
 										<div className="absolute inset-0 bg-black/30" />
 										<div className="absolute inset-0 flex items-center justify-center px-4">
 											<div className="bg-white/5 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20">
-												<p className="text-white text-center font-semibold text-base sm:text-lg">{products[1].title}</p>
+												<p className="text-white text-center font-normal text-base sm:text-lg">{products[1].title}</p>
+										{products[1].subtitle && <p className="text-white/90 font-normal text-base sm:text-lg text-center">{products[1].subtitle}</p>}
 											</div>
 										</div>
 									</div>
@@ -96,7 +99,8 @@ export default function ProductGrid() {
 									<div className="absolute inset-0 bg-black/30" />
 									<div className="absolute inset-0 flex items-center justify-center px-4">
 										<div className="bg-white/5 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20">
-											<p className="text-white text-center font-semibold text-base sm:text-lg">{products[3].title}</p>
+											<p className="text-white text-center font-normal text-base sm:text-lg">{products[3].title}</p>
+								{products[3].subtitle && <p className="text-white/90 font-normal text-base sm:text-lg text-center">{products[3].subtitle}</p>}
 										</div>
 									</div>
 								</div>
@@ -108,8 +112,8 @@ export default function ProductGrid() {
 								<div className="absolute inset-0 bg-black/30" />
 								<div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
 									<div className="bg-white/5 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
-										<p className="text-white font-semibold text-base sm:text-lg">{products[2].title}</p>
-										{products[2].subtitle && <p className="text-white/90 text-xs sm:text-sm">{products[2].subtitle}</p>}
+										<p className="text-white font-normal text-base sm:text-lg">{products[2].title}</p>
+								{products[2].subtitle && <p className="text-white/90 font-normal text-base sm:text-lg text-center">{products[2].subtitle}</p>}
 									</div>
 								</div>
 							</div>

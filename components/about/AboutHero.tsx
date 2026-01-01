@@ -7,12 +7,15 @@ export default function AboutHero() {
 			<div className="mx-auto h-[70vh] max-w-7xl px-6 sm:px-12 py-4">
 				<div className="flex items-center h-full w-full relative">
 					{/* Left Content */}
-					<div className={`z-10 text-5xl md:text-6xl font-bold text-[#D9560E] mb-6 leading-tight`}>
-						<div className={`font-[amaranth]`}>
+					<div className={`z-10 text-3xl md:text-6xl font-bold text-[#D9560E] mb-6 leading-tight`}>
+						<div className={`font-[amaranth] mb-10`}>
 							<h1 className="">More than a brand</h1>
 							<h1 className="">A way of better living</h1>
 						</div>
-						<PaddedButton size="lg" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white">
+						<PaddedButton size="sm" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white lg:hidden">
+							View Products
+						</PaddedButton>
+						<PaddedButton size="lg" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white hidden lg:flex">
 							View Products
 						</PaddedButton>
 					</div>

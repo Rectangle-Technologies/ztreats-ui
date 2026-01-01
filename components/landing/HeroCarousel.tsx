@@ -56,16 +56,19 @@ const slides: CarouselSlide[] = [
 
 export default function HeroCarousel() {
 	return (
-		<Carousel className="w-full border rounded-xl text-white overflow-hidden">
-			<CarouselContent className="h-[80vh]">
+		<Carousel className="w-full relative lg:border lg:rounded-xl text-white overflow-hidden">
+			<CarouselContent className="h-[70vh] lg:h-[80vh]">
 				{slides.map((slide) => (
 					<CarouselItem key={slide.id} className="relative w-full h-full">
 						{/* Background Image */}
-						<div className="absolute inset-0">
+						<div className="absolute inset-0 z-0">
 							<Image src={slide.backgroundImage} alt={slide.heading} fill className="object-cover" priority />
 							{/* Dark Overlay */}
 							<div className="absolute inset-0 bg-black/40" />
 						</div>
+
+						{/* Blue Tint */}
+						<div className="absolute h-full w-full top-0 left-0 bg-[#1235EC] opacity-20 z-10 pointer-events-none"></div>
 
 						{/* Top Indicators */}
 						<div className="flex justify-end gap-2 absolute top-8 right-8 z-10">
@@ -75,10 +78,10 @@ export default function HeroCarousel() {
 						</div>
 
 						{/* Content */}
-						<div className="relative z-10 flex flex-col justify-between h-full p-4 sm:p-12">
+						<div className="relative z-20 flex flex-col justify-between h-full p-4 sm:p-12">
 							{/* Center Content */}
 							<div className="space-y-4 ">
-								<h1 className="text-5xl sm:text-6xl font-bold leading-tight">
+								<h1 className="text-4xl sm:text-5xl font-bold leading-tight font-[amaranth]">
 									{slide.heading}
 									<br />
 									{slide.subheading}
@@ -88,17 +91,17 @@ export default function HeroCarousel() {
 							{/* Bottom Section with Navigation and Buttons */}
 							<div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
 								<div className="max-w-2xl">
-									<p className="text-xl font-bold sm:text-2xl">{slide.dry_fruits_name}</p>
-									<p className="text-xl sm:text-2xl font-light">{slide.description}</p>
+									<p className="text-lg font-bold sm:text-xl">{slide.dry_fruits_name}</p>
+									<p className="text-lg sm:text-xl font-light">{slide.description}</p>
 								</div>
 								{/* CTA Buttons */}
 								<div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-								<PaddedButton size="lg" className="bg-teal-700 hover:bg-teal-800 text-white">
-									{slide.ctaButtons.primary}
-								</PaddedButton>
-								<PaddedButton variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white/10 w-full sm:w-auto">
-									{slide.ctaButtons.secondary}
-								</PaddedButton>
+									<PaddedButton size="lg" className="bg-teal-700 hover:bg-teal-800 text-white">
+										{slide.ctaButtons.primary}
+									</PaddedButton>
+									<PaddedButton variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white/10 w-full sm:w-auto">
+										{slide.ctaButtons.secondary}
+									</PaddedButton>
 								</div>
 							</div>
 						</div>

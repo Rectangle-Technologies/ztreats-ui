@@ -51,7 +51,7 @@ export default function FeedbackSection() {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
 					{/* Left Content */}
 					<div>
-						<h2 className="text-3xl sm:text-4xl font-bold leading-tight mb-8">
+						<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] leading-tight mb-8">
 							<span className="text-orange-600">Best</span>
 							<br />
 							Based On

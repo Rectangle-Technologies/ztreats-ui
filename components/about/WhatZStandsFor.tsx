@@ -7,23 +7,23 @@ export default function WhatZStandsFor() {
 	return (
 		<section className="w-full bg-[#055066]">
 			<div className="mx-auto max-w-7xl px-0">
-				<div className="flex flex-col lg:flex-row min-h-screen">
+				<div className="flex flex-col lg:flex-row h-[80vh] overflow-hidden">
 					{/* Left Content - Teal Background */}
-					<div className="w-full lg:w-[55%] text-white px-8 sm:px-12 py-12 md:py-16 flex flex-col justify-center">
+					<div className="w-full lg:w-[55%] text-white px-8 sm:px-12 py-4 md:py-8 flex flex-col justify-center">
 						<div>
-							<h2 className="text-3xl md:text-4xl font-bold mb-2 font-[amaranth]">
+							<h2 className="text-2xl md:text-3xl font-bold mb-2 font-[amaranth]">
 								What <span className="text-white">&quot;Z&quot;</span> Stands for
 								<span className="text-[#FFD46C] block h-1 w-12 mt-2"></span>
 							</h2>
 
-							<p className="text-base leading-relaxed mb-8 mt-6">
+							<p className="text-sm leading-relaxed mb-8 mt-6">
 								The &quot;Z&quot; in ZTreats stands for Zippy – a spirit of freshness, vitality, and effortless energy. It reflects our belief that good nutrition should feel light, lively, and easy to enjoy — not heavy, boring, or complicated. At ZTreats, wellness
 								isn&apos;t about slowing down. It&apos;s about staying energized, feeling good, and choosing better — one delicious moment at a time.
 							</p>
 
-							<p className="text-base mb-4">Zippy means:</p>
+							<p className="text-sm mb-4">Zippy means:</p>
 
-							<ul className="space-y-3 text-base md:text-lg">
+							<ul className="space-y-3 text-sm md:text-lg">
 								<li className="flex items-start gap-3">
 									<span className="text-[#FFD46C] font-bold mt-1">•</span>
 									<span>
@@ -51,27 +51,27 @@ export default function WhatZStandsFor() {
 						<div className="grid grid-cols-2 h-full gap-4" style={{ width: "100%" }}>
 							<div className="h-full flex flex-col gap-2">
 								{/* Row 1, Col 1: 30% */}
-								<div className="overflow-hidden relative" style={{ height: "40%" }}>
+						<div className="overflow-hidden relative" style={{ height: "25%" }}>
 									<Image src={images[0]} alt="Product" fill className="w-full h-full object-cover rounded-b-lg" />
 								</div>
 								{/* Row 2, Col 1: 45% */}
-								<div className="overflow-hidden" style={{ height: "45%" }}>
+						<div className="overflow-hidden" style={{ height: "30%" }}>
 									<Image src={images[2]} alt="Product" width={300} height={225} className="w-full h-full object-cover rounded-lg" />
 								</div>
 								{/* Row 3, Col 1: 25% */}
-								<div className="overflow-hidden" style={{ height: "25%" }}>
+						<div className="overflow-hidden" style={{ height: "45%" }}>
 									<Image src={images[4]} alt="Product" width={300} height={125} className="w-full h-full object-cover rounded-t-lg" />
 								</div>
 							</div>
 
 							<div className="h-full flex flex-col gap-2">
 								{/* Row 1, Col 2: 25% */}
-								<div className="overflow-hidden" style={{ height: "25%" }}>
+						<div className="overflow-hidden" style={{ height: "40%" }}>
 									<Image src={images[1]} alt="Product" width={300} height={125} className="w-full h-full object-cover rounded-b-lg" />
 								</div>
 
 								{/* Row 2, Col 2: 45% */}
-								<div className="overflow-hidden" style={{ height: "45%" }}>
+						<div className="overflow-hidden" style={{ height: "30%" }}>
 									<Image src={images[3]} alt="Product" width={300} height={225} className="w-full h-full object-cover rounded-lg" />
 								</div>
 

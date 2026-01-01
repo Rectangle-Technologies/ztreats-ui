@@ -79,7 +79,7 @@ export default function ProductCard({
 			{/* Product Info */}
 			<div className="p-6 flex-1 flex flex-col">
 				<h3 className="text-xl font-bold text-black mb-1">{name}</h3>
-				<p className="text-sm text-gray-600 italic mb-4">{description}</p>
+				<p className="text-sm italic mb-4">{description}</p>
 
 				{/* Rating and Stock */}
 				<div className="flex items-center justify-between mb-4 text-sm">
@@ -110,7 +110,7 @@ export default function ProductCard({
 
 				{/* Button */}
 				<div className="flex gap-3">
-					<Button className="flex-1 bg-gray-900 hover:bg-gray-700 text-white py-3 px-4 transition-colors h-full cursor-pointer">
+					<Button className="flex-1 bg-black hover:bg-gray-700 text-white py-3 px-4 transition-colors h-full cursor-pointer">
 						Order On Whatsapp
 					</Button>
 					<button className="rounded-lg hover:bg-gray-100 transition-colors p-3 cursor-pointer">

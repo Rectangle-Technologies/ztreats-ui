@@ -36,7 +36,7 @@ export default function ClientsTestimonials() {
 			<div className="mx-auto max-w-7xl">
 				{/* Header */}
 				<div className="flex items-center gap-3 mb-4">
-					<h2 className="text-4xl sm:text-5xl font-bold text-black">
+					<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] text-black">
 						What Our Clients Say
 						<br />
 						About Us
@@ -68,8 +68,8 @@ export default function ClientsTestimonials() {
 					</CarouselContent>
 
 					{/* Navigation Arrows */}
-					<CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 h-10 w-10 border-gray-300 hover:bg-gray-100" />
-					<CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 h-10 w-10 border-gray-300 hover:bg-gray-100" />
+					<CarouselPrevious className="absolute -left-4 lg:left-0 top-1/2 -translate-y-1/2 h-10 w-10 border-gray-300 hover:bg-gray-100" />
+					<CarouselNext className="absolute -right-4 lg:right-0 top-1/2 -translate-y-1/2 h-10 w-10 border-gray-300 hover:bg-gray-100" />
 				</Carousel>
 			</div>
 		</section>
