@@ -7,8 +7,8 @@ export default function Footer() {
 		<footer className="w-full bg-transparent pt-16 pb-8">
 			{/* Main Footer Content */}
 			<div className="mx-auto max-w-7xl px-6 sm:px-12 mb-12">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-					{/* Logo & Tagline */}
+				{/* Logo */}
+				<div className="mb-12">
 					<div className="flex flex-col gap-2">
 						<Image
 							src="/assets/header-logo.png"
@@ -18,7 +18,10 @@ export default function Footer() {
 							className=" h-auto"
 						/>
 					</div>
+				</div>
 
+				{/* Links and Policies Grid */}
+				<div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
 					{/* Links */}
 					<div>
 						<h3 className="font-bold text-black mb-4">Links</h3>
@@ -56,7 +59,10 @@ export default function Footer() {
 							</Link>
 						</nav>
 					</div>
+				</div>
 
+				{/* Contact & Social - Full Width on Mobile */}
+				<div className="mb-12">
 					{/* Contact & Social */}
 					<div>
 						<div className="flex flex-col gap-4 mb-6">
@@ -121,13 +127,15 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
+			</div>
 
 			{/* Divider */}
+			<div className="mx-auto max-w-7xl px-6 sm:px-12">
 				<div className="border-t border-gray-200"></div>
 			</div>
 
 			{/* Copyright */}
-			<div className="text-center text-gray-500 text-sm">
+			<div className="text-center text-gray-500 text-sm mt-8">
 				<p>Copyright © 2023 - All rights Reserved</p>
 			</div>
 		</footer>
