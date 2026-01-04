@@ -54,11 +54,11 @@ export default function ClientsTestimonials() {
 									<h3 className="text-2xl font-bold text-black mb-4">{testimonial.name}</h3>
 
 									{/* Star Rating */}
-									<div className="flex justify-center gap-1 mb-6">
+									{/* <div className="flex justify-center gap-1 mb-6">
 										{Array.from({ length: 5 }).map((_, i) => (
 											<Star key={i} className={`w-6 h-6 ${i < Math.floor(testimonial.rating) ? "fill-yellow-400 text-yellow-400" : i < testimonial.rating ? "fill-yellow-400 text-yellow-400 opacity-50" : "text-gray-300"}`} />
 										))}
-									</div>
+									</div> */}
 
 									{/* Testimonial Text */}
 									<p className="text-lg text-gray-600 leading-relaxed max-w-2xl">&quot;{testimonial.text}&quot;</p>
@@ -68,8 +68,8 @@ export default function ClientsTestimonials() {
 					</CarouselContent>
 
 					{/* Navigation Arrows */}
-					<CarouselPrevious className="absolute -left-4 lg:left-0 top-1/2 -translate-y-1/2 h-10 w-10 border-gray-300 hover:bg-gray-100" />
-					<CarouselNext className="absolute -right-4 lg:right-0 top-1/2 -translate-y-1/2 h-10 w-10 border-gray-300 hover:bg-gray-100" />
+					<CarouselPrevious className="absolute -left-4 lg:left-0 top-1/2 -translate-y-1/2 h-7 w-7 md:h-10 md:w-10 border-gray-300 hover:bg-gray-100" />
+					<CarouselNext className="absolute -right-4 lg:right-0 top-1/2 -translate-y-1/2 h-7 w-7 md:h-10 md:w-10 border-gray-300 hover:bg-gray-100" />
 				</Carousel>
 			</div>
 		</section>

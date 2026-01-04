@@ -63,8 +63,8 @@ export default function Footer() {
 							{/* Email */}
 							<div className="flex items-center gap-3">
 								<Mail className="w-5 h-5 text-gray-600" />
-								<a href="mailto:info@example.com" className="text-gray-600 hover:text-black transition-colors">
-									info@example.com
+								<a href="mailto:info.ztreats@gmail.com" className="text-gray-600 hover:text-black transition-colors">
+									info.ztreats@gmail.com
 								</a>
 							</div>
 
@@ -72,30 +72,27 @@ export default function Footer() {
 							<div className="flex items-center gap-3">
 								<Phone className="w-5 h-5 text-gray-600" />
 								<a href="tel:+11234567890" className="text-gray-600 hover:text-black transition-colors">
-									+1 123 456 7890
+									+91 8849829497
 								</a>
 							</div>
 
 							{/* Address */}
 							<div className="flex items-start gap-3">
 								<MapPin className="w-5 h-5 text-gray-600 shrink-0 mt-1" />
-								<address className="text-gray-600 not-italic">1234 Main Street, City, State, ZIP</address>
+								<address className="text-gray-600 not-italic">B-151/A, Gate no.3, Parshottam Nagar Society,<br className="hidden md:flex" /> Near Althan Garden, Althan, Surat, Gujarat</address>
 							</div>
 						</div>
 
 						{/* Social Media Icons */}
 						<div className="flex gap-3">
-							<a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors" style={{ backgroundColor: "#84CC16" }} aria-label="Facebook">
+							{/* <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors" style={{ backgroundColor: "#84CC16" }} aria-label="Facebook">
 								<Facebook className="w-5 h-5 text-white" />
-							</a>
-							<a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors" style={{ backgroundColor: "#EC4899" }} aria-label="Instagram">
+							</a> */}
+							<a href="https://www.instagram.com/ztreats.india?igsh=Ymg3ODF2MjJwZzFv" target="_blank" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors" style={{ backgroundColor: "#EC4899" }} aria-label="Instagram">
 								<Instagram className="w-5 h-5 text-white" />
 							</a>
-							<a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors" style={{ backgroundColor: "#6366F1" }} aria-label="LinkedIn">
+							<a href="https://www.linkedin.com/company/ztreats/" target="_blank" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors" style={{ backgroundColor: "#6366F1" }} aria-label="LinkedIn">
 								<Linkedin className="w-5 h-5 text-white" />
-							</a>
-							<a href="#" className="w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-black" aria-label="Twitter">
-								<Twitter className="w-5 h-5 text-white" />
 							</a>
 						</div>
 					</div>
@@ -109,7 +106,7 @@ export default function Footer() {
 
 			{/* Copyright */}
 			<div className="text-center text-gray-500 text-sm mt-8">
-				<p>Copyright © 2023 - All rights Reserved</p>
+				<p>Copyright © {new Date().getFullYear()} - All rights Reserved</p>
 			</div>
 		</footer>
 	);

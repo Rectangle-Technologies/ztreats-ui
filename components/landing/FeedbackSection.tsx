@@ -2,7 +2,6 @@ import Image from "next/image";
 
 interface StatCard {
 	id: number;
-	label: string;
 	value: string;
 	change: string;
 	changeColor?: string;
@@ -17,14 +16,12 @@ interface TestimonialCard {
 const statCards: StatCard[] = [
 	{
 		id: 1,
-		label: "Lorem ipsum",
 		value: "425+",
 		change: "+20% then last week",
 		changeColor: "text-green-500",
 	},
 	{
 		id: 2,
-		label: "Lorem ipsum",
 		value: "425+",
 		change: "+20% then last week",
 		changeColor: "text-green-500",
@@ -51,7 +48,7 @@ export default function FeedbackSection() {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
 					{/* Left Content */}
 					<div>
-						<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] leading-tight mb-8">
+						<h2 className="text-5xl md:text-6xl font-bold font-[amaranth] leading-tight mb-8">
 							<span className="text-orange-600">Best</span>
 							<br />
 							Based On
@@ -64,13 +61,10 @@ export default function FeedbackSection() {
 							{statCards.map((stat) => (
 								<div
 									key={stat.id}
-									className="bg-[#FFD46C] rounded-2xl p-4 flex flex-col justify-between"
+									className="bg-[#FFD46C] rounded-2xl p-6 flex flex-col justify-between"
 								>
-									<p className="text-xs font-medium text-gray-800 mb-2">
-										{stat.label}
-									</p>
 									<div>
-										<p className="text-2xl font-bold text-black mb-1">
+										<p className="text-4xl font-bold text-black mb-1">
 											{stat.value}
 										</p>
 										<p className="text-xs font-medium text-gray-700">

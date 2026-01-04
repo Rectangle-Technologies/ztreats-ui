@@ -9,13 +9,13 @@ export default function AboutHero() {
 					{/* Left Content */}
 					<div className={`z-10 text-3xl md:text-6xl font-bold text-[#D9560E] mb-6 leading-tight`}>
 						<div className={`font-[amaranth] mb-10`}>
-							<h1 className="">More than a brand</h1>
-							<h1 className="">A way of better living</h1>
+							<h1 className="md:text-8xl">More than a brand</h1>
+							<h1 className="md:text-8xl">A way of better living</h1>
 						</div>
-						<PaddedButton size="sm" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white lg:hidden">
+						<PaddedButton size="sm" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white lg:hidden p-5w text-xs">
 							View Products
 						</PaddedButton>
-						<PaddedButton size="lg" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white hidden lg:flex">
+						<PaddedButton size="lg" className="border-2 border-[#055066] bg-transparent text-[#055066] hover:bg-[#055066] hover:text-white hidden lg:flex p-7 text-base">
 							View Products
 						</PaddedButton>
 					</div>

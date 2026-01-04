@@ -14,7 +14,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ name, description, image, price, originalPrice, discount, page = "landing" }: ProductCardProps) {
 	return (
-		<div className={`rounded-3xl relative flex flex-col h-full justify-between ${page === "landing" ? "" : ""}`}>
+		<div className={`rounded-3xl relative flex flex-col mt-5 justify-between ${page === "landing" ? "" : ""}`}>
 			{discount && (
 				<svg className="absolute -top-8 -left-4 -rotate-12 w-20 h-20 p-3 drop-shadow-lg z-10" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 					<defs>
@@ -83,8 +83,8 @@ export default function ProductCard({ name, description, image, price, originalP
 				</div>
 
 				{/* Button */}
-				<div className="flex gap-3">
-					<Button className="lg:flex-1 bg-black hover:bg-gray-700 text-white px-2 lg:px-4 transition-colors h-full cursor-pointer">Order On Whatsapp</Button>
+				<div className="flex justify-center">
+					<Button className="bg-black hover:bg-gray-700 text-white px-2 lg:px-4 py-3 text-xs sm:text-sm transition-colors h-full cursor-pointer w-full md:w-4/5">Order On Whatsapp</Button>
 				</div>
 			</div>
 		</div>

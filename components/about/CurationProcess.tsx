@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { PaddedButton } from "../PaddedButton";
 
 const timelineItems = [
@@ -24,12 +27,14 @@ const timelineItems = [
 ];
 
 export default function CurationProcess() {
+	const router = useRouter();
+
 	return (
 		<section className="w-full bg-[#F5F5F0] py-16 relative">
 			<div className="mx-auto max-w-7xl px-8 sm:px-12  mb-20">
 				{/* Hero Section */}
 				<div className="mb-16 flex flex-col lg:flex-row justify-between  items-center lg:items-start">
-					<h2 className="text-2xl md:text-3xl font-bold mb-6 font-[amaranth]">
+					<h2 className="text-3xl md:text-5xl font-bold mb-6 font-[amaranth]">
 						Thoughtfully Curated.
 						<br />
 						<span className="relative inline-block">
@@ -38,7 +43,7 @@ export default function CurationProcess() {
 						</span>
 					</h2>
 					<div className="flex justify-center mt-8">
-						<PaddedButton variant="outline" className="bg-inherit border border-[#055066] hover:bg-[#055066] hover:text-white text-[#055066]">
+					<PaddedButton variant="outline" className="bg-inherit border border-[#055066] hover:bg-[#055066] hover:text-white text-[#055066] py-6" onClick={() => router.push('/products')}>
 							See our best sellers
 						</PaddedButton>
 					</div>
@@ -56,8 +61,8 @@ export default function CurationProcess() {
 									</div>
 								) : index % 2 === 0 ? (
 									<div className="flex flex-col items-end justify-start">
-										<h3 className="text-lg font-bold text-[#1a1a1a] mb-2">{item.title}</h3>
-										<p className="text-sm text-[#666] text-end leading-relaxed max-w-md">{item.description}</p>
+										<h3 className="text-lg md:text-2xl font-bold text-[#1a1a1a] mb-2">{item.title}</h3>
+										<p className="text-sm md:text-base text-[#666] text-end leading-relaxed max-w-md">{item.description}</p>
 									</div>
 								) : null}
 							</div>
@@ -76,8 +81,8 @@ export default function CurationProcess() {
 									</div>
 								) : index % 2 === 1 ? (
 									<div>
-										<h3 className="text-lg font-bold text-[#1a1a1a] mb-2">{item.title}</h3>
-										<p className="text-sm text-[#666] leading-relaxed max-w-md">{item.description}</p>
+										<h3 className="text-lg md:text-2xl font-bold text-[#1a1a1a] mb-2">{item.title}</h3>
+										<p className="text-sm md:text-base text-[#666] leading-relaxed max-w-md">{item.description}</p>
 									</div>
 								) : null}
 							</div>

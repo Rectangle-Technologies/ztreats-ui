@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { PaddedButton } from "@/components/PaddedButton";
 import ProductCard from "@/components/landing/ProductCard";
 import { products } from "@/data/products";
 
 export default function PopularMenu() {
+	const router = useRouter();
+
 	return (
 		<section className="w-full px-6 sm:px-12 py-12" style={{ backgroundColor: "#F7F7F5" }}>
 			<div className="mx-auto max-w-7xl">
@@ -14,7 +19,7 @@ export default function PopularMenu() {
 						<h2 className="">Popular</h2>
 						<h2 className="text-4xl sm:text-5xl font-bold">Menu</h2>
 					</div>
-					<PaddedButton size="xl" className="bg-teal-700 hover:bg-teal-800 text-white">
+				<PaddedButton size="lg" className="bg-teal-800 hover:bg-teal-700 text-white text-base p-7" onClick={() => router.push('/products')}>
 						View More
 					</PaddedButton>
 				</div>

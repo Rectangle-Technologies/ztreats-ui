@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Facebook, Instagram, Twitter, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Twitter, ArrowRight, Linkedin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "../ui/textarea";
@@ -43,13 +43,13 @@ export default function ContactSection() {
 				<div className="flex flex-col gap-8">
 					{/* Left Section - Heading and Social Icons */}
 					<div className="flex justify-between">
-						<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] text-black mb-12">
+						<h2 className="text-3xl sm:text-5xl font-bold font-[amaranth] text-black mb-12">
 							Get in touch with us. <br className="lg:hidden"/>We&apos;re here to assist you.
 						</h2>
 
 						{/* Social Icons */}
 						<div className="flex flex-col gap-4">
-							<Link
+							{/* <Link
 								href="https://facebook.com"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -57,9 +57,9 @@ export default function ContactSection() {
 								aria-label="Facebook"
 							>
 								<Facebook className="w-5 h-5 text-gray-700" />
-							</Link>
+							</Link> */}
 							<Link
-								href="https://instagram.com"
+								href="https://www.instagram.com/ztreats.india?igsh=Ymg3ODF2MjJwZzFv"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-400 transition-colors"
@@ -68,13 +68,13 @@ export default function ContactSection() {
 								<Instagram className="w-5 h-5 text-gray-700" />
 							</Link>
 							<Link
-								href="https://twitter.com"
+								href="https://www.linkedin.com/company/ztreats/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-400 transition-colors"
 								aria-label="Twitter"
 							>
-								<Twitter className="w-5 h-5 text-gray-700" />
+								<Linkedin className="w-5 h-5 text-gray-700" />
 							</Link>
 						</div>
 					</div>
@@ -122,7 +122,7 @@ export default function ContactSection() {
 
 						<Button
 							type="submit"
-							className="w-fit bg-gray-900 hover:bg-gray-800 text-white px-16 py-2.5 flex items-center gap-2 transition-colors"
+							className="w-full md:w-1/3 bg-gray-900 hover:bg-gray-800 text-white py-6 flex items-center gap-2 transition-colors"
 						>
 							Leave us a Message
 							<ArrowRight className="w-4 h-4" />

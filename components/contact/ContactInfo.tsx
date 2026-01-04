@@ -3,12 +3,12 @@ import { ContactCard } from "./ContactCard";
 const CONTACT_INFO = [
 	{
 		title: "Email Address",
-		value: "help@info.com",
+		value: "info.ztreats@gmail.com",
 		hours: "Assistance hours:\nMonday - Friday 6 am to 8 pm EST",
 	},
 	{
-		title: "Number",
-		value: "(808) 998-34256",
+		title: "Contact",
+		value: "+91 8849829497",
 		hours: "Assistance hours:\nMonday - Friday 6 am to 8 pm EST",
 	},
 ];

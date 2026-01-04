@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { PaddedButton } from "@/components/PaddedButton";
 
@@ -55,6 +58,22 @@ const slides: CarouselSlide[] = [
 ];
 
 export default function HeroCarousel() {
+	const router = useRouter();
+	const pathname = usePathname();
+
+	const handleWhyZTreatsClick = () => {
+		if (pathname === '/') {
+			// Already on home page, just scroll
+			const element = document.getElementById('why-ztreats');
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		} else {
+			// Navigate to home page with hash
+			router.push('/#why-ztreats');
+		}
+	};
+
 	return (
 		<Carousel className="w-full relative lg:border lg:rounded-xl text-white overflow-hidden">
 			<CarouselContent className="h-[70vh] lg:h-[80vh]">
@@ -81,7 +100,7 @@ export default function HeroCarousel() {
 						<div className="relative z-20 flex flex-col justify-between h-full p-4 sm:p-12">
 							{/* Center Content */}
 							<div className="space-y-4 ">
-								<h1 className="text-4xl sm:text-5xl font-bold leading-tight font-[amaranth]">
+								<h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight font-[amaranth]">
 									{slide.heading}
 									<br />
 									{slide.subheading}
@@ -96,10 +115,10 @@ export default function HeroCarousel() {
 								</div>
 								{/* CTA Buttons */}
 								<div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-									<PaddedButton size="lg" className="bg-teal-700 hover:bg-teal-800 text-white">
+									<PaddedButton size="lg" className="bg-teal-800 hover:bg-teal-700 text-white p-7" onClick={() => router.push('/products')}>
 										{slide.ctaButtons.primary}
 									</PaddedButton>
-									<PaddedButton variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white/10 w-full sm:w-auto">
+									<PaddedButton variant="outline" size="md" className="bg-transparent text-white border-white hover:bg-white/10 w-full sm:w-auto p-7" onClick={handleWhyZTreatsClick}>
 										{slide.ctaButtons.secondary}
 									</PaddedButton>
 								</div>
@@ -110,8 +129,8 @@ export default function HeroCarousel() {
 			</CarouselContent>
 
 			{/* Navigation Arrows */}
-			<CarouselPrevious className="left-4 sm:left-8 bg-white/20 border-white text-white hover:bg-white/40 h-12 w-12" />
-			<CarouselNext className="right-4 sm:right-8 bg-white/20 border-white text-white hover:bg-white/40 h-12 w-12" />
+			<CarouselPrevious className="left-4 sm:left-8 bg-white/20 border-white text-white hover:bg-white/40 h-8 w-8 sm:h-12 sm:w-12" />
+			<CarouselNext className="right-4 sm:right-8 bg-white/20 border-white text-white hover:bg-white/40 h-8 w-8 sm:h-12 sm:w-12" />
 		</Carousel>
 	);
 }

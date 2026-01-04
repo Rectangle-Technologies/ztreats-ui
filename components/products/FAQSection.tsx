@@ -17,39 +17,39 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
 	{
 		id: "item-1",
-		question: "Can I get more information about a product?",
+		question: "What is the shelf life of ZTreats products?",
 		answer:
-			"Absolutely! Each product page includes detailed descriptions, specifications, and customer reviews to help you make an informed decision.",
+			"ZTreats dry fruits and nuts have a shelf life of up to 6 months, carefully packed to preserve freshness, taste, and quality.",
 	},
 	{
 		id: "item-2",
-		question: "Are your products covered by a warranty?",
+		question: "How should I store dry fruits after opening?",
 		answer:
-			"Yes, our products come with a satisfaction guarantee. Please refer to individual product pages for specific warranty details.",
+			"For best results, store in an airtight container in a cool, dry place. Select dry fruits may be refrigerated to extend freshness.",
 	},
 	{
 		id: "item-3",
-		question: "Can I track my order?",
+		question: "Do you offer bulk or corporate orders?",
 		answer:
-			"Of course! Once your order is placed, you'll receive a tracking link via email or WhatsApp to monitor your delivery in real-time.",
+			"Yes. ZTreats offers bulk and corporate gifting solutions, with customised pricing and packaging tailored to your needs.",
 	},
 	{
 		id: "item-4",
-		question: "What are your shipping options?",
+		question: "What if my order arrives damaged?",
 		answer:
-			"We offer standard and express shipping options to most locations. Shipping costs and delivery times vary by location and selected method.",
+			"Your satisfaction matters to us. Please contact our customer care within 24 hours of delivery, along with product images, and we will assist you promptly.",
 	},
 	{
 		id: "item-5",
-		question: "How long does shipping take?",
+		question: "What is your return procedure?",
 		answer:
-			"Standard shipping typically takes 3-5 business days, while express shipping is available for 1-2 business day delivery.",
+			"Simply reach out to our customer care team, who will guide you through the return process with care and clarity.",
 	},
 	{
 		id: "item-6",
-		question: "What payment methods do you accept?",
+		question: "Is Cash on Delivery (COD) available?",
 		answer:
-			"We accept multiple payment methods including credit cards, debit cards, UPI, and direct bank transfers for your convenience.",
+			"Yes. COD is available - because at ZTreats, premium quality is built on genuine trust.",
 	},
 ];
 

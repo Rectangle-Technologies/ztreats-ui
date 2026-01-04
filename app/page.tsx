@@ -41,7 +41,7 @@ export default function Home() {
 			<ProductGrid />
 			<FeedbackSection />
 			<PopularMenu />
-			<WhyZTreats />
+			<WhyZTreats  />
 			<HampersGifting />
 			<ClientsTestimonials />
 			<CTASection />

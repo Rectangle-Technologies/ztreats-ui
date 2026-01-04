@@ -67,10 +67,10 @@ const cards: WhyCard[] = [
 
 export default function WhyZTreats() {
 	return (
-		<section className="w-full px-6 sm:px-12 py-8" style={{ backgroundColor: "#FFFFFF" }}>
+		<section id="why-ztreats" className="w-full px-6 sm:px-12 py-8" style={{ backgroundColor: "#FFFFFF" }}>
 			<div className="mx-auto max-w-7xl">
 				{/* Header */}
-				<div className="flex items-center gap-3 mb-4">
+				<div className="flex items-center gap-3 mb-10">
 					<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] text-black">Why Z Treats</h2>
 					<Image src="/assets/landing-page/spark.png" height={200} width={200} alt="Circle" className="w-12 h-12 sm:w-20 sm:h-20 -ml-8 -mt-4"/>
 				</div>
@@ -81,10 +81,10 @@ export default function WhyZTreats() {
 					<div className="flex flex-col gap-6">
 						{/* Card 1 - Handpicked Quality */}
 					<div className="rounded-3xl p-8 flex flex-col justify-center items-center text-center min-h-28 lg:min-h-32" style={{ backgroundColor: cards[0].bgColorValue }}>
-							<h3 className="text-2xl font-bold mb-2" style={{ color: cards[0].textColor }}>
+							<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: cards[0].textColor }}>
 								{cards[0].title}
 							</h3>
-						<p className="text-lg" style={{ color: cards[0].textColor }}>
+						<p className="text-sm md:text-lg" style={{ color: cards[0].textColor }}>
 								{cards[0].description}
 							</p>
 						</div>
@@ -99,30 +99,30 @@ export default function WhyZTreats() {
 					<div className="flex flex-col gap-6 h-full">
 						{/* Card 2 - A Zippy Boost */}
 					<div className="rounded-3xl p-8 flex flex-col justify-center items-center text-center flex-1" style={{ backgroundColor: cards[1].bgColorValue }}>
-							<h3 className="text-2xl font-bold mb-2" style={{ color: cards[1].textColor }}>
+							<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: cards[1].textColor }}>
 								{cards[1].title}
 							</h3>
-						<p className="text-lg" style={{ color: cards[1].textColor }}>
+						<p className="text-sm md:text-lg" style={{ color: cards[1].textColor }}>
 								{cards[1].description}
 							</p>
 						</div>
 
 						{/* Card 5 - Smartly Healthy */}
 					<div className="rounded-3xl p-8 flex flex-col justify-center items-center text-center flex-1" style={{ backgroundColor: cards[4].bgColorValue }}>
-							<h3 className="text-2xl font-bold mb-2" style={{ color: cards[4].textColor }}>
+							<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: cards[4].textColor }}>
 								{cards[4].title}
 							</h3>
-						<p className="text-lg" style={{ color: cards[4].textColor }}>
+						<p className="text-sm md:text-lg" style={{ color: cards[4].textColor }}>
 								{cards[4].description}
 							</p>
 						</div>
 
 						{/* Card 7 - Always Fresh */}
 					<div className="rounded-3xl p-8 flex flex-col justify-center items-center text-center flex-1" style={{ backgroundColor: cards[6].bgColorValue }}>
-							<h3 className="text-2xl font-bold mb-2" style={{ color: cards[6].textColor }}>
+							<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: cards[6].textColor }}>
 								{cards[6].title}
 							</h3>
-						<p className="text-lg" style={{ color: cards[6].textColor }}>
+						<p className="text-sm md:text-lg" style={{ color: cards[6].textColor }}>
 								{cards[6].description}
 							</p>
 						</div>
@@ -137,10 +137,10 @@ export default function WhyZTreats() {
 
 						{/* Card 8 - Made for Gifting */}
 					<div className="rounded-3xl p-8 flex flex-col justify-center items-center text-center min-h-28 lg:min-h-32" style={{ backgroundColor: cards[7].bgColorValue }}>
-							<h3 className="text-2xl font-bold mb-2" style={{ color: cards[7].textColor }}>
+							<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: cards[7].textColor }}>
 								{cards[7].title}
 							</h3>
-						<p className="text-lg" style={{ color: cards[7].textColor }}>
+						<p className="text-sm md:text-lg" style={{ color: cards[7].textColor }}>
 								{cards[7].description}
 							</p>
 						</div>

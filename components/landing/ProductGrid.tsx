@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { PaddedButton } from "@/components/PaddedButton";
 
 interface ProductCard {
@@ -39,6 +42,8 @@ const products: ProductCard[] = [
 ];
 
 export default function ProductGrid() {
+	const router = useRouter();
+
 	return (
 		<section className="w-full px-6 sm:px-12 py-12 bg-white">
 			<div className="mx-auto max-w-7xl">
@@ -46,19 +51,19 @@ export default function ProductGrid() {
 					{/* Left Featured Card */}
 					<div className="lg:col-span-1 bg-[#D9560E] rounded-3xl p-8 text-white flex flex-col justify-between items-start">
 						<div>
-							<h2 className="text-3xl sm:text-4xl font-bold mb-6 leading-tight">
+							<h2 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">
 								Rooted in quality.
 								<br />
 								Wrapped with care.
 							</h2>
-							<p className="text-base sm:text-lg leading-relaxed mb-8">
+							<p className="text-sm sm:text-lg leading-relaxed mb-8">
 								Founded in 2018, this brand started with a simple idea — premium nuts that taste honest, and gift hampers people are proud to give.
 								<br />
 								<br />
 								No fillers. No flashy nonsense. Just thoughtfully sourced goodness.
 							</p>
 						</div>
-						<PaddedButton variant="outline" size="xl" className="bg-transparent text-white border-white hover:bg-white/10 sm:w-auto">
+						<PaddedButton variant="outline" size="xl" className="bg-transparent text-white border-white hover:bg-white/10 sm:w-auto" onClick={() => router.push('/products')}>
 							Discover the collection →
 						</PaddedButton>
 					</div>

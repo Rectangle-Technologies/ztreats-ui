@@ -11,17 +11,17 @@ export default function WhatZStandsFor() {
 					{/* Left Content - Teal Background */}
 					<div className="w-full lg:w-[55%] text-white px-8 sm:px-12 py-4 md:py-8 flex flex-col justify-center">
 						<div>
-							<h2 className="text-2xl md:text-3xl font-bold mb-2 font-[amaranth]">
+							<h2 className="text-2xl md:text-5xl font-bold mb-2 font-[amaranth]">
 								What <span className="text-white">&quot;Z&quot;</span> Stands for
 								<span className="text-[#FFD46C] block h-1 w-12 mt-2"></span>
 							</h2>
 
-							<p className="text-sm leading-relaxed mb-8 mt-6">
+							<p className="text-sm md:text-lg leading-relaxed mb-8 mt-6">
 								The &quot;Z&quot; in ZTreats stands for Zippy – a spirit of freshness, vitality, and effortless energy. It reflects our belief that good nutrition should feel light, lively, and easy to enjoy — not heavy, boring, or complicated. At ZTreats, wellness
 								isn&apos;t about slowing down. It&apos;s about staying energized, feeling good, and choosing better — one delicious moment at a time.
 							</p>
 
-							<p className="text-sm mb-4">Zippy means:</p>
+							<p className="text-sm md:text-lg mb-4">Zippy means:</p>
 
 							<ul className="space-y-3 text-sm md:text-lg">
 								<li className="flex items-start gap-3">

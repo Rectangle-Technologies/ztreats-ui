@@ -50,7 +50,7 @@ export default function ProductsGallery() {
 	return (
 		<section className="w-full py-12 sm:py-8">
 			<div className="mx-auto max-w-7xl px-4 ">
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+				<div className="grid grid-cols-2 lg:grid-cols-3">
 					{galleryImages.map((image) => (
 						<div
 							key={`${image.row}${image.col}`}
