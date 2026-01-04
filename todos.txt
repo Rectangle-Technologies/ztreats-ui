@@ -12,12 +12,12 @@
 [x] - In client review section on the home page, in mobile view, the review part is overlapping with the arrows. Check once and add some margin.
 [x] - In the What Z Stands for section in the about page, reduce its height. There is a lot of empty space above and below the text. Check the design.
 [x] - Adjust the font size in mobile view in the first section of about page.
-[ ] - In the first section of the Products Page, photos are missing.
+[x] - In the first section of the Products Page, photos are missing.
 [x] - In the filtering section, enable functionality as well.
 [x] - You have used the same card for Product in the Products page as the one used in home page, but in the design they are different. Check once.
 [x] - Can we display 2 products in a row in mobile view of products page?
 [x] - In the footer, in mobile view, keep the Links and Policies side-by-side, not below each other
-[ ] - Make the price range filter a slider
-[ ] - Make all pricing in rupees
-[ ] - In desktop view, the footer is not proper. Everything should be in a single line only according to the design.
-[ ] - Policy pages are left
+[x] - Make the price range filter a slider
+[x] - Make all pricing in rupees
+[x] - In desktop view, the footer is not proper. Everything should be in a single line only according to the design.
+[x] - Policy pages are left

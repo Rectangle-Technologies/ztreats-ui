@@ -78,8 +78,8 @@ export default function ProductCard({ name, description, image, price, originalP
 
 				{/* Price */}
 				<div className="flex items-center lg:gap-2 mb-2 lg:mb-6">
-					<span className="lg:text-2xl text-black">${price}</span>
-					{originalPrice && <span className="text-lg text-gray-400 line-through">${originalPrice}</span>}
+					<span className="lg:text-2xl text-black">₹{price}</span>
+					{originalPrice && <span className="text-lg text-gray-400 line-through">₹{originalPrice}</span>}
 				</div>
 
 				{/* Button */}

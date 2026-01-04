@@ -50,7 +50,6 @@ export default function ProductListing() {
 	const maxPriceParam = searchParams.get("maxPrice") || "";
 	const [localMinPrice, setLocalMinPrice] = useState(minPriceParam);
 	const [localMaxPrice, setLocalMaxPrice] = useState(maxPriceParam);
-	const priceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
 	// Sync local price with URL params when they change externally
 	useEffect(() => {
@@ -93,31 +92,16 @@ export default function ProductListing() {
 			if (searchTimeoutRef.current) {
 				clearTimeout(searchTimeoutRef.current);
 			}
-			if (priceTimeoutRef.current) {
-				clearTimeout(priceTimeoutRef.current);
-			}
 		};
 	}, []);
 
-	// Debounced price filter handlers
+	// Price filter handlers
 	const handleMinPriceChange = (value: string) => {
 		setLocalMinPrice(value);
-		if (priceTimeoutRef.current) {
-			clearTimeout(priceTimeoutRef.current);
-		}
-		priceTimeoutRef.current = setTimeout(() => {
-			updateParams("minPrice", value);
-		}, 300);
 	};
 
 	const handleMaxPriceChange = (value: string) => {
 		setLocalMaxPrice(value);
-		if (priceTimeoutRef.current) {
-			clearTimeout(priceTimeoutRef.current);
-		}
-		priceTimeoutRef.current = setTimeout(() => {
-			updateParams("maxPrice", value);
-		}, 300);
 	};
 
 	// Helper function to update multi-select params
@@ -141,10 +125,10 @@ export default function ProductListing() {
 			filters.push({ key: "category", label: categories.find((c) => c.toLowerCase() === cat) || cat, value: cat, isMulti: true });
 		});
 		if (minPriceParam) {
-			filters.push({ key: "minPrice", label: `Min: $${minPriceParam}`, value: minPriceParam });
+			filters.push({ key: "minPrice", label: `Min: ₹${minPriceParam}`, value: minPriceParam });
 		}
 		if (maxPriceParam) {
-			filters.push({ key: "maxPrice", label: `Max: $${maxPriceParam}`, value: maxPriceParam });
+			filters.push({ key: "maxPrice", label: `Max: ₹${maxPriceParam}`, value: maxPriceParam });
 		}
 		return filters;
 	}, [selectedCategories, minPriceParam, maxPriceParam]);
@@ -158,15 +142,15 @@ export default function ProductListing() {
 			// Category filter (multi-select)
 			const matchesCategory = selectedCategories.length === 0 || selectedCategories.some((cat) => product.name.toLowerCase().includes(cat.toLowerCase()));
 
-			// Price filter
-			const minPrice = minPriceParam ? parseFloat(minPriceParam) : null;
-			const maxPrice = maxPriceParam ? parseFloat(maxPriceParam) : null;
+			// Price filter (use local values for immediate UI response)
+			const minPrice = localMinPrice ? parseFloat(localMinPrice) : null;
+			const maxPrice = localMaxPrice ? parseFloat(localMaxPrice) : null;
 			const matchesMinPrice = minPrice === null || product.price >= minPrice;
 			const matchesMaxPrice = maxPrice === null || product.price <= maxPrice;
 
 			return matchesSearch && matchesCategory && matchesMinPrice && matchesMaxPrice;
 		});
-	}, [searchQuery, selectedCategories, minPriceParam, maxPriceParam]);
+	}, [searchQuery, selectedCategories, localMinPrice, localMaxPrice]);
 
 	// Remove a specific filter
 	const removeFilter = (key: string, value?: string) => {
@@ -177,11 +161,9 @@ export default function ProductListing() {
 			);
 		} else if (key === "minPrice") {
 			setLocalMinPrice("");
-			if (priceTimeoutRef.current) clearTimeout(priceTimeoutRef.current);
 			updateParams("minPrice", "");
 		} else if (key === "maxPrice") {
 			setLocalMaxPrice("");
-			if (priceTimeoutRef.current) clearTimeout(priceTimeoutRef.current);
 			updateParams("maxPrice", "");
 		} else {
 			updateParams(key, "");
@@ -196,9 +178,6 @@ export default function ProductListing() {
 		if (searchTimeoutRef.current) {
 			clearTimeout(searchTimeoutRef.current);
 		}
-		if (priceTimeoutRef.current) {
-			clearTimeout(priceTimeoutRef.current);
-		}
 		router.push(pathname, { scroll: false });
 	};
 
@@ -210,7 +189,13 @@ export default function ProductListing() {
 						<SearchBar value={localSearchQuery} onChange={handleSearchChange} />
 						<div className="flex flex-wrap items-center gap-3 md:gap-4">
 							{/* <CategoryFilter categories={categories} selectedCategories={selectedCategories} onSelectionChange={(cats) => updateMultiParams("category", cats)} /> */}
-							<PriceFilter minPrice={localMinPrice} maxPrice={localMaxPrice} onMinChange={handleMinPriceChange} onMaxChange={handleMaxPriceChange} />
+						<PriceFilter minPrice={localMinPrice} maxPrice={localMaxPrice} onMinChange={handleMinPriceChange} onMaxChange={handleMaxPriceChange} onRangeCommit={(min, max) => {
+							// Build fresh params from current URL but override min/max with committed values
+							const params = new URLSearchParams(window.location.search);
+							if (min && min !== "all") params.set("minPrice", min); else params.delete("minPrice");
+							if (max && max !== "all") params.set("maxPrice", max); else params.delete("maxPrice");
+							router.push(`${pathname}?${params.toString()}`, { scroll: false });
+						}} />
 						</div>
 					</div>
 
