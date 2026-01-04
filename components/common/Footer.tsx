@@ -41,16 +41,16 @@ export default function Footer() {
 								<Link href={"/policies"}>Policies</Link>
 							</h3>
 							<nav className="flex flex-col gap-3">
-								<Link href="/policies#privacy" className="text-gray-600 hover:text-black transition-colors">
+								<Link href="/policies/privacy" className="text-gray-600 hover:text-black transition-colors">
 									Privacy Policy
 								</Link>
-								<Link href="/policies#terms" className="text-gray-600 hover:text-black transition-colors">
+								<Link href="/policies/terms" className="text-gray-600 hover:text-black transition-colors">
 									Terms & Conditions
 								</Link>
-								<Link href="/policies#shipping" className="text-gray-600 hover:text-black transition-colors">
+								<Link href="/policies/shipping" className="text-gray-600 hover:text-black transition-colors">
 									Shipping Policy
 								</Link>
-								<Link href="/policies#refund" className="text-gray-600 hover:text-black transition-colors">
+								<Link href="/policies/refund" className="text-gray-600 hover:text-black transition-colors">
 									Return & Refund Policy
 								</Link>
 							</nav>
