@@ -27,3 +27,4 @@
 [ ] - Add a sticky WA button to each page in the bottom right.
 [ ] - On home page there should be just 4 products
 [ ] - The logo in the footer is very small. Check the design. And in mobile section it should be centered
+[ ] - Fix build issue
