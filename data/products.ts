@@ -64,3 +64,39 @@ export const products: ProductItem[] = [
 		price: 180,
 	},
 ];
+
+// Featured products for PopularMenu component (limited to 4 items)
+export const popularProducts: ProductItem[] = [
+	{
+		id: 1,
+		name: "Roasted Cashew Nuts",
+		description: "Premium roasted cashews with a rich, buttery flavor",
+		image: ["/assets/products/product-lists/1.jpg"],
+		price: 200,
+	},
+	{
+		id: 2,
+		name: "Salted Cashew Nuts",
+		description: "Crunchy salted cashews perfect for snacking",
+		image: ["/assets/products/product-lists/2.jpg"],
+		price: 200,
+	},
+	{
+		id: 3,
+		name: "Raw Almond Nuts",
+		description: "Fresh raw almonds packed with nutrients",
+		image: ["/assets/products/product-lists/3.jpg"],
+		price: 180,
+		originalPrice: 360,
+		discount: 50,
+	},
+	{
+		id: 4,
+		name: "Honey Roasted Almonds",
+		description: "Sweet honey-glazed almonds for a delightful treat",
+		image: ["/assets/products/product-lists/4.jpg"],
+		price: 220,
+		originalPrice: 440,
+		discount: 50,
+	},
+];

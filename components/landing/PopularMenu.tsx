@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { PaddedButton } from "@/components/PaddedButton";
 import ProductCard from "@/components/landing/ProductCard";
-import { products } from "@/data/products";
+import { popularProducts } from "@/data/products";
 
 export default function PopularMenu() {
 	const router = useRouter();
@@ -26,7 +26,7 @@ export default function PopularMenu() {
 
 				{/* Product Grid */}
 				<div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
-					{products.map((product) => (
+					{popularProducts.map((product) => (
 						<ProductCard key={product.id} {...product} page="landing" />
 					))}
 				</div>

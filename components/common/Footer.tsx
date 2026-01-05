@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
 	return (
@@ -8,7 +8,7 @@ export default function Footer() {
 			{/* Main Footer Content */}
 			<div className="mx-auto max-w-7xl px-6 sm:px-12 mb-12">
 				{/* Desktop: Single Row Layout | Mobile: Stacked Layout */}
-				<div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
+				<div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
 					{/* Logo */}
 					<div className="shrink-0">
 						<Image src="/assets/header-logo.png" alt="ZTreats Logo" width={200} height={200} className="h-auto" />

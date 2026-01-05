@@ -21,10 +21,10 @@
 [x] - Make all pricing in rupees
 [x] - In desktop view, the footer is not proper. Everything should be in a single line only according to the design.
 [x] - Policy pages are left
-[ ] - The 2 images in the Foodies Feedback section on the home page are not visible in smaller screen size.
-[ ] - Clicking on Whatsapp button should start a chat at number - +91 88498 29497.
-[ ] - Submitting form should send an email.
-[ ] - Add a sticky WA button to each page in the bottom right.
-[ ] - On home page there should be just 4 products
-[ ] - The logo in the footer is very small. Check the design. And in mobile section it should be centered
-[ ] - Fix build issue
+[x] - The 2 images in the Foodies Feedback section on the home page are not visible in smaller screen size.
+[x] - Clicking on Whatsapp button should start a chat at number - +91 88498 29497.
+[x] - Submitting form should send an email.
+[x] - Add a sticky WA button to each page in the bottom right.
+[x] - On home page there should be just 4 products
+[x] - The logo in the footer is very small. Check the design. And in mobile section it should be centered
+[x] - Fix build issue
