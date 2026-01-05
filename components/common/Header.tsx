@@ -40,12 +40,12 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-3 sm:px-12 xl:px-0">
         <div className="flex h-20 items-center justify-between lg:justify-start">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 mr-10">
             <Image
               src="/assets/header-logo.png"
               alt="ZTreats Logo"
-              width={180}
-              height={180}
+              width={80}
+              height={80}
               className=""
             />
           </Link>

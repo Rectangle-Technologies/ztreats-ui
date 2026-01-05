@@ -78,11 +78,11 @@ export default function FeedbackSection() {
 					</div>
 
 					{/* Right Content - Testimonial Images */}
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 h-full">
+					<div className="grid grid-cols-2 gap-6 h-full min-h-[300px] sm:min-h-[400px]">
 						{testimonialCards.map((card) => (
 							<div
 								key={card.id}
-								className="relative rounded-3xl overflow-hidden h-full"
+								className="relative rounded-3xl overflow-hidden h-full min-h-[250px] sm:min-h-0"
 							>
 								<Image
 									src={card.image}

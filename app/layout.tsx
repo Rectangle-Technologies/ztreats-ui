@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Amaranth, Poppins } from "next/font/google";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -109,6 +111,8 @@ export default function RootLayout({
 				<Header />
 				<div className="mt-20">{children}</div>
 				<Footer />
+				<WhatsAppButton />
+				<Toaster position="top-right" richColors />
 			</body>
 		</html>
   );
