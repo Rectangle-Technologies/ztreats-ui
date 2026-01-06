@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 interface ProductCardProps {
 	name: string;
@@ -84,7 +86,9 @@ export default function ProductCard({ name, description, image, price, originalP
 
 				{/* Button */}
 				<div className="flex justify-center">
-					<Button className="bg-black hover:bg-gray-700 text-white px-2 lg:px-4 py-3 text-xs sm:text-sm transition-colors h-full cursor-pointer w-full md:w-4/5">Order On Whatsapp</Button>
+					<Button asChild className="bg-black hover:bg-gray-700 text-white px-2 lg:px-4 py-3 text-xs sm:text-sm transition-colors h-full cursor-pointer w-full md:w-4/5">
+						<Link href={getWhatsAppUrl()}>Order On Whatsapp</Link>
+					</Button>
 				</div>
 			</div>
 		</div>

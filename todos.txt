@@ -28,3 +28,5 @@
 [x] - On home page there should be just 4 products
 [x] - The logo in the footer is very small. Check the design. And in mobile section it should be centered
 [x] - Fix build issue
+[x] - Content for hero banner
+[ ] - Meta tags
