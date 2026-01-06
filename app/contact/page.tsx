@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 function ContactUsPage() {
 	return (
 		<>
-			<ContactSection />
+			{/* <ContactSection /> */}
 			<ContactInfo/>
 		</>
 	);

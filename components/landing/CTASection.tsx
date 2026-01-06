@@ -1,4 +1,6 @@
+import NextLink from "next/link";
 import { PaddedButton } from "../PaddedButton";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function CTASection() {
 	return (
@@ -17,9 +19,11 @@ export default function CTASection() {
 				<div className="text-center max-w-2xl relative z-10">
 					<h2 className="text-4xl md:text-5xl font-bold font-[amaranth] text-white mb-6">Ready to Snack Smarter?</h2>
 					<p className="text-xl md:text-2xl text-white mb-8">Your order is just one text away.</p>
-					<PaddedButton size="xl" variant="outline" className="bg-transparent text-white hover:bg-gray-300">
-						Chat with Us
-					</PaddedButton>
+					<NextLink href={getWhatsAppUrl()}>
+						<PaddedButton size="xl" variant="outline" className="bg-transparent text-white hover:bg-gray-300">
+							Chat With Us
+						</PaddedButton>
+					</NextLink>
 				</div>
 			</div>
 		</section>

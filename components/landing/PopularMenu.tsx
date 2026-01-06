@@ -19,7 +19,7 @@ export default function PopularMenu() {
 						<h2 className="">Popular</h2>
 						<h2 className="text-4xl sm:text-5xl font-bold">Menu</h2>
 					</div>
-				<PaddedButton size="lg" className="bg-teal-800 hover:bg-teal-700 text-white text-base p-7" onClick={() => router.push('/products')}>
+					<PaddedButton size="lg" className="bg-teal-800 hover:bg-teal-700 text-white text-base p-7" onClick={() => router.push('/products')}>
 						View More
 					</PaddedButton>
 				</div>
