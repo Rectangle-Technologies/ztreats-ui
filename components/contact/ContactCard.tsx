@@ -17,6 +17,7 @@ export function ContactCard({ title, value, hours }: ContactCardProps) {
 				{value}
 			</p>
 			<p className="text-sm sm:text-md text-gray-100">
+				Assistance Hours:<br />
 				{hours}
 			</p>
 		</div>

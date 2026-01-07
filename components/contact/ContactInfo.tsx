@@ -4,12 +4,12 @@ const CONTACT_INFO = [
 	{
 		title: "Email Address",
 		value: "info.ztreats@gmail.com",
-		hours: "Assistance hours:\nMonday - Friday 6 am to 8 pm EST",
+		hours: "Monday - Saturday, 9:00 am to 9:00 pm IST",
 	},
 	{
 		title: "Contact",
 		value: "+91 8849829497",
-		hours: "Assistance hours:\nMonday - Friday 6 am to 8 pm EST",
+		hours: "Monday - Saturday, 9:00 am to 9:00 pm IST",
 	},
 ];
 
@@ -17,12 +17,11 @@ export default function ContactInfo() {
 	return (
 		<section className="w-full bg-[#1a5f7a] py-12 sm:py-16 lg:py-20">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+				<div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8 lg:gap-12 items-center">
 					{/* Left Side - Heading */}
 					<div>
-						<h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-[amaranth] text-white leading-tight">
-							We are always happy<br />
-							to assist you
+						<h2 className="text-3xl md:text-4xl font-bold font-[amaranth] text-white leading-tight">
+							We are always happy to assist you
 						</h2>
 					</div>
 
