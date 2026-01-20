@@ -87,7 +87,7 @@ export default function ProductCard({ name, description, image, price, originalP
 				{/* Button */}
 				<div className="flex justify-center">
 					<Button asChild className="bg-black hover:bg-gray-700 text-white px-2 lg:px-4 py-3 text-xs sm:text-sm transition-colors h-full cursor-pointer w-full md:w-4/5">
-						<Link href={getWhatsAppUrl()}>Order On Whatsapp</Link>
+						<Link href={getWhatsAppUrl(`Hey! I want to order ${name}`)}>Order On Whatsapp</Link>
 					</Button>
 				</div>
 			</div>

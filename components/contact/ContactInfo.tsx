@@ -4,12 +4,12 @@ const CONTACT_INFO = [
 	{
 		title: "Email Address",
 		value: "info.ztreats@gmail.com",
-		hours: "Monday - Saturday, 9:00 am to 9:00 pm IST",
+		hours: "Monday - Saturday, 9 AM to 9 PM IST",
 	},
 	{
 		title: "Contact",
 		value: "+91 8849829497",
-		hours: "Monday - Saturday, 9:00 am to 9:00 pm IST",
+		hours: "Monday - Saturday, 9 AM to 9 PM IST",
 	},
 ];
 
