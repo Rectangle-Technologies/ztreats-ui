@@ -25,7 +25,7 @@ const slides: CarouselSlide[] = [
 		subheading: "Live vibrant.",
 		dry_fruits_name: "Dry fruits & nuts",
 		description: "Wholesome goodness to fuel a vibrant lifestyle",
-		backgroundImage: "/assets/landing-page/carousel-WALNUT CT2.jpg",
+		backgroundImage: "/assets/landing-page/carousel/carousel-1.jpg",
 		ctaButtons: {
 			primary: "Explore Range",
 			secondary: "Why ZTreats",
@@ -37,7 +37,7 @@ const slides: CarouselSlide[] = [
 		subheading: "Pure Taste.",
 		dry_fruits_name: "Premium Dry Fruits",
 		description: "Carefully curated for richness, quality, and flavor",
-		backgroundImage: "/assets/landing-page/carousel-WALNUT CT2.jpg",
+		backgroundImage: "/assets/landing-page/carousel/carousel-2.jpeg",
 		ctaButtons: {
 			primary: "Shop Now",
 			secondary: "Why ZTreats",
@@ -49,7 +49,7 @@ const slides: CarouselSlide[] = [
 		subheading: "Wrapped with Care.",
 		dry_fruits_name: "Gift Hampers",
 		description: "A thoughtful way to celebrate life's moments",
-		backgroundImage: "/assets/landing-page/carousel-WALNUT CT2.jpg",
+		backgroundImage: "/assets/landing-page/carousel/carousel-3.jpg",
 		ctaButtons: {
 			primary: "View Hampers",
 			secondary: "Why ZTreats",
