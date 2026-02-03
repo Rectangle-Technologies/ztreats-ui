@@ -16,9 +16,9 @@ interface TestimonialCard {
 const statCards: StatCard[] = [
 	{
 		id: 1,
-		value: "425+",
-		change: "+20% then last week",
-		changeColor: "text-green-500",
+		value: "720+",
+		change: "orders completed",
+		// changeColor: "text-green-500",
 	},
 	{
 		id: 2,
@@ -31,12 +31,12 @@ const statCards: StatCard[] = [
 const testimonialCards: TestimonialCard[] = [
 	{
 		id: 1,
-		image: "/assets/landing-page/testimonial-1.jpg",
+		image: "/assets/landing-page/testimonial/testimonial-1.jpg",
 		alt: "Customer testimonial 1",
 	},
 	{
 		id: 2,
-		image: "/assets/landing-page/testimonial-2.jpg",
+		image: "/assets/landing-page/testimonial/testimonial-2.jpg",
 		alt: "Customer testimonial 2",
 	},
 ];

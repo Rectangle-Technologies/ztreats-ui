@@ -2,40 +2,40 @@ import Image from "next/image";
 
 interface Hamper {
 	id: number;
-	title: string;
-	description: string;
+	title?: string;
+	description?: string;
 	image: string;
-	price: number;
+	price?: number;
 }
 
 const hampers: Hamper[] = [
 	{
 		id: 1,
-		title: "Hamper 1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-		image: "/assets/landing-page/hamper.png",
-		price: 9.49,
+		// title: "Hamper 1",
+		// description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/hampers/1.JPG",
+		// price: 9.49,
 	},
 	{
 		id: 2,
-		title: "Hamper 1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-		image: "/assets/landing-page/hamper.png",
-		price: 9.49,
+		// title: "Hamper 1",
+		// description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/hampers/2.jpg",
+		// price: 9.49,
 	},
 	{
 		id: 3,
-		title: "Hamper 1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-		image: "/assets/landing-page/hamper.png",
-		price: 9.49,
+		// title: "Hamper 1",
+		// description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/hampers/3.jpg",
+		// price: 9.49,
 	},
 	{
 		id: 4,
-		title: "Hamper 1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-		image: "/assets/landing-page/hamper.png",
-		price: 9.49,
+		// title: "Hamper 1",
+		// description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+		image: "/assets/landing-page/hampers/4.jpg",
+		// price: 9.49,
 	},
 ];
 
@@ -57,7 +57,7 @@ export default function HampersGifting() {
 							<div className="relative h-64 mb-4 rounded-2xl overflow-hidden bg-gray-200 shrink-0">
 								<Image
 									src={hamper.image}
-									alt={hamper.title}
+									alt={hamper.title || ""}
 									width={300}
 									height={300}
 									className="w-full h-full object-cover"
@@ -66,9 +66,9 @@ export default function HampersGifting() {
 
 							{/* Content */}
 							<div>
-								<h3 className="text-xl font-bold text-black mb-2">{hamper.title}</h3>
-								<p className="text-sm text-gray-600 mb-4">{hamper.description}</p>
-								<p className="text-2xl font-bold text-black">${hamper.price.toFixed(2)}</p>
+								{hamper.title && <h3 className="text-xl font-bold text-black mb-2">{hamper.title}</h3>}
+								{hamper.description && <p className="text-sm text-gray-600 mb-4">{hamper.description}</p>}
+								{hamper.price && <p className="text-2xl font-bold text-black">${hamper.price.toFixed(2)}</p>}
 							</div>
 						</div>
 					))}
