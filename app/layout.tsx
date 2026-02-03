@@ -92,9 +92,9 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: "/favicon.ico",
-		shortcut: "/favicon-16x16.png",
-		apple: "/apple-touch-icon.png",
+		icon: "/favicon-v2.png?v=" + Date.now(),
+		shortcut: "/favicon-v2.png",
+		apple: "/favicon-v2.png",
 	},
 	manifest: "/site.webmanifest",
 	category: "food",
