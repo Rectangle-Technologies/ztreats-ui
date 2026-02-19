@@ -20,12 +20,12 @@ const statCards: StatCard[] = [
 		change: "orders completed",
 		// changeColor: "text-green-500",
 	},
-	{
-		id: 2,
-		value: "425+",
-		change: "+20% then last week",
-		changeColor: "text-green-500",
-	},
+	// {
+	// 	id: 2,
+	// 	value: "425+",
+	// 	change: "+20% then last week",
+	// 	changeColor: "text-green-500",
+	// },
 ];
 
 const testimonialCards: TestimonialCard[] = [
