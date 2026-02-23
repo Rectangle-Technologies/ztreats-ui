@@ -53,7 +53,7 @@ export const products: ProductItem[] = [
 		id: 9,
 		name: "Mamra Badam [L]",
 		image: ["/assets/products/all/mamra-badaam.jpeg"],
-		price: 220,
+		price: 1125,
 	},
 	{
 		id: 10,
