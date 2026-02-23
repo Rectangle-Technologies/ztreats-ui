@@ -57,7 +57,7 @@ export default function ProductGrid() {
 								Wrapped with care.
 							</h2>
 							<p className="text-sm sm:text-lg leading-relaxed mb-8">
-								Founded in 2018, this brand started with a simple idea — premium nuts that taste honest, and gift hampers people are proud to give.
+								Founded in 2024, this brand started with a simple idea — premium nuts that taste honest, and gift hampers people are proud to give.
 								<br />
 								<br />
 								No fillers. No flashy nonsense. Just thoughtfully sourced goodness.

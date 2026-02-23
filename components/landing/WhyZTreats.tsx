@@ -27,12 +27,12 @@ const cards: WhyCard[] = [
 	},
 	{
 		id: 3,
-		image: "/assets/landing-page/a79911cdd730d226bd0c7b4fd9670d617072ecc9.jpg",
+		image: "/assets/landing-page/cashews.png",
 		bgColorValue: "#1F2937",
 	},
 	{
 		id: 4,
-		image: "/assets/landing-page/nuts-basket.jpg",
+		image: "/assets/landing-page/almonds.png",
 		bgColorValue: "#0D9488",
 		span: "row",
 	},

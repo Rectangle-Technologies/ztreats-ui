@@ -80,7 +80,10 @@ export default function ProductCard({ name, description, image, price, originalP
 
 				{/* Price */}
 				<div className="flex items-center lg:gap-2 mb-2 lg:mb-6">
-					<span className="lg:text-2xl text-black">₹{price}</span>
+					<span className="lg:text-2xl text-black">
+						₹{price}
+						<span className="text-xs lg:text-sm text-gray-500 ml-1">/250 gm</span>
+					</span>
 					{originalPrice && <span className="text-lg text-gray-400 line-through">₹{originalPrice}</span>}
 				</div>
 
