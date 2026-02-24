@@ -17,7 +17,7 @@ const products: ProductCard[] = [
 		id: 1,
 		title: "Crunch you",
 		subtitle:"can trust.",
-		image: "/assets/landing-page/a79911cdd730d226bd0c7b4fd9670d617072ecc9.jpg",
+		image: "/assets/landing-page/walnut-crunch-1.jpg",
 		overlay: true,
 	},
 	{
@@ -30,7 +30,7 @@ const products: ProductCard[] = [
 		id: 3,
 		title: "Mixed Nuts",
 		subtitle: "Assorted Nuts",
-		image: "/assets/landing-page/blueberry ct1.jpg",
+		image: "/assets/landing-page/pista.jpg",
 		overlay: true,
 	},
 	{

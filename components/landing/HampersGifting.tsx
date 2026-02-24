@@ -41,7 +41,7 @@ const hampers: Hamper[] = [
 
 export default function HampersGifting() {
 	return (
-		<section className="w-full px-6 sm:px-12 py-12" style={{ backgroundColor: "#F7F7F5" }}>
+		<section className="w-full px-6 sm:px-12 py-12" style={{ backgroundColor: "#F7F7F5" }} id="hampers">
 			<div className="mx-auto max-w-7xl">
 				{/* Header */}
 				<div className="flex items-center gap-3 mb-8">
