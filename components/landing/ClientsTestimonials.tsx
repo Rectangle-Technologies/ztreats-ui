@@ -18,15 +18,33 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
 	{
 		id: 1,
-		name: "Olivia Davis",
-		rating: 4.5,
-		text: "For special moments, this perfume is my favorite choice. Its sophisticated and unique scent never fails to attract compliments.",
+		name: "Shashank Kapuria",
+		rating: 5,
+		text: `I appreciate that this is a brand I can trust for my healthy snacking needs. The integrity of the nuts means they hold up beautifully whether I'm using them in recipes, topping my morning yogurt, or just grabbing a handful straight from the resealable bag (which, by the way, is excellent at maintaining freshness).`,
 	},
 	{
 		id: 2,
-		name: "John Smith",
+		name: "Meghna Datwani",
 		rating: 5,
-		text: "Absolutely love the quality of these treats! Perfect gift for any occasion. The packaging is beautiful and the taste is exceptional.",
+		text: `The quality of the dryfruits is amazing... Specially the walnuts. I've become a regular customer to them and I only trust them with the quality, even when it comes to gifting it to my relatives.`,
+	},
+	{
+		id: 3,
+		name: "Darshan Shah",
+		rating: 5,
+		text: `Great product quality and very helpful team! I have started regularly buying from them!`,
+	},
+	{
+		id: 4,
+		name: "Darshan Nawab",
+		rating: 5,
+		text: `Top Notch quality with pocket friendly price.`,
+	},
+	{
+		id: 5,
+		name: "Heena Rajput",
+		rating: 5,
+		text: `The hamper was absolutely beautiful and the packaging felt rich and classy. We don’t like ordinary decorations, but this one truly stood out. The jute flowers and bag were lovely, and everyone loved it. I will definitely be ordering again!`,
 	},
 ];
 
@@ -54,11 +72,11 @@ export default function ClientsTestimonials() {
 									<h3 className="text-2xl font-bold text-black mb-4">{testimonial.name}</h3>
 
 									{/* Star Rating */}
-									{/* <div className="flex justify-center gap-1 mb-6">
+									<div className="flex justify-center gap-1 mb-6">
 										{Array.from({ length: 5 }).map((_, i) => (
 											<Star key={i} className={`w-6 h-6 ${i < Math.floor(testimonial.rating) ? "fill-yellow-400 text-yellow-400" : i < testimonial.rating ? "fill-yellow-400 text-yellow-400 opacity-50" : "text-gray-300"}`} />
 										))}
-									</div> */}
+									</div>
 
 									{/* Testimonial Text */}
 									<p className="text-lg text-gray-600 leading-relaxed max-w-2xl">&quot;{testimonial.text}&quot;</p>
@@ -68,8 +86,8 @@ export default function ClientsTestimonials() {
 					</CarouselContent>
 
 					{/* Navigation Arrows */}
-					<CarouselPrevious className="absolute -left-4 lg:left-0 top-1/2 -translate-y-1/2 h-7 w-7 md:h-10 md:w-10 border-gray-300 hover:bg-gray-100" />
-					<CarouselNext className="absolute -right-4 lg:right-0 top-1/2 -translate-y-1/2 h-7 w-7 md:h-10 md:w-10 border-gray-300 hover:bg-gray-100" />
+					<CarouselPrevious className="absolute -left-4 lg:left-0 top-1/2 -translate-y-1/2 h-7 w-7 md:h-10 md:w-10 border-gray-300 hover:bg-gray-100 hover:cursor-pointer" />
+					<CarouselNext className="absolute -right-4 lg:right-0 top-1/2 -translate-y-1/2 h-7 w-7 md:h-10 md:w-10 border-gray-300 hover:bg-gray-100 hover:cursor-pointer" />
 				</Carousel>
 			</div>
 		</section>
