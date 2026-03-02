@@ -26,7 +26,7 @@ export default function HampersWithAHeart() {
 						<p className="text-sm md:text-base leading-relaxed mb-8 text-[#666]">Whether it&apos;s a festival, corporate gift, travel essential, or a personal surprise – ZTreats makes every moment memorable.</p>
 
 						<div>
-						<PaddedButton className="bg-white border-2 border-[#055066] text-[#055066] hover:bg-[#055066] hover:text-white py-6" onClick={() => router.push('/products')}>Explore Gift Hampers</PaddedButton>
+						<PaddedButton className="bg-white border-2 border-[#055066] text-[#055066] hover:bg-[#055066] hover:text-white py-6" onClick={() => router.push('/#hampers')}>Explore Gift Hampers</PaddedButton>
 						</div>
 					</div>
 

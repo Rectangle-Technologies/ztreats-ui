@@ -8,7 +8,7 @@ const timelineItems = [
 	{
 		title: "Selectively Sourced",
 		description: "We begin with a careful selection of premium dry fruits, nuts, and berries — chosen for superior quality, freshness, and taste.",
-		imageSrc: "/assets/about/walnut-product.png",
+		imageSrc: "/assets/about/walnut-product-1.png",
 	},
 	{
 		title: "Expertly Refined",
@@ -77,7 +77,7 @@ export default function CurationProcess() {
 							<div className="flex-1 flex items-start">
 								{index % 2 === 0 && item.imageSrc ? (
 									<div className="">
-										<Image src={item.imageSrc} alt={item.title} height={200} width={200} className="md:-mt-30" />
+										<Image src={item.imageSrc} alt={item.title} height={200} width={200} className="md:-mt-30 mb-10" />
 									</div>
 								) : index % 2 === 1 ? (
 									<div>

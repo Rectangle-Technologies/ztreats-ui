@@ -1,4 +1,6 @@
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { PaddedButton } from "../PaddedButton";
+import NextLink from "next/link";
 
 export default function TaglineSection() {
 	return (
@@ -17,11 +19,13 @@ export default function TaglineSection() {
 				<div className="flex flex-col items-center justify-center text-center">
 					<h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#7AC9B3] mb-12 leading-tight">
 						Snack Smarter. Snack Healthier.
-						<br className="lg:hidden"/> {" "}
+						<br className="lg:hidden" /> {" "}
 						With ZTreats.
 					</h2>
 
-					<PaddedButton className="bg-white text-[#055066] hover:bg-gray-100 p-6">Chat with Us</PaddedButton>
+					<NextLink href={getWhatsAppUrl()}>
+						<PaddedButton className="bg-white text-[#055066] hover:bg-gray-100 p-6">Chat with Us</PaddedButton>
+					</NextLink>
 				</div>
 			</div>
 		</section>

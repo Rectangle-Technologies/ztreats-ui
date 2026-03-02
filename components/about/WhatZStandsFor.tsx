@@ -7,7 +7,7 @@ export default function WhatZStandsFor() {
 	return (
 		<section className="w-full bg-[#055066]">
 			<div className="mx-auto max-w-7xl px-0">
-				<div className="flex flex-col lg:flex-row h-[80vh] overflow-hidden">
+				<div className="flex flex-col lg:flex-row h-[100vh] md:h-[80vh] overflow-hidden">
 					{/* Left Content - Teal Background */}
 					<div className="w-full lg:w-[55%] text-white px-8 sm:px-12 py-4 md:py-8 flex flex-col justify-center">
 						<div>
