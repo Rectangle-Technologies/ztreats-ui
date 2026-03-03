@@ -46,6 +46,12 @@ const testimonials: Testimonial[] = [
 		rating: 5,
 		text: `The hamper was absolutely beautiful and the packaging felt rich and classy. We don’t like ordinary decorations, but this one truly stood out. The jute flowers and bag were lovely, and everyone loved it. I will definitely be ordering again!`,
 	},
+	{
+		id: 6,
+		name: "Esther Pooja",
+		rating: 5,
+		text: `I'd give this brand 5 stars... from the packaging to the cleanliness to the quality, absolutely top notch!`,
+	},
 ];
 
 export default function ClientsTestimonials() {
@@ -53,8 +59,8 @@ export default function ClientsTestimonials() {
 		<section className="w-full px-6 sm:px-12 py-16" style={{ backgroundColor: "#FFFFFF" }}>
 			<div className="mx-auto max-w-7xl">
 				{/* Header */}
-				<div className="flex items-center gap-3 mb-4">
-					<h2 className="text-4xl sm:text-5xl font-bold font-[amaranth] text-black">
+				<div className="flex items-center gap-3 mb-8 md:mb-4">
+					<h2 className="text-3xl md:text-5xl font-bold font-[amaranth] text-black">
 						What Our Clients Say
 						<br />
 						About Us
@@ -67,19 +73,19 @@ export default function ClientsTestimonials() {
 					<CarouselContent>
 						{testimonials.map((testimonial) => (
 							<CarouselItem key={testimonial.id}>
-								<div className="flex flex-col items-center justify-center min-h-96 px-8 sm:px-16">
+								<div className="flex flex-col items-center justify-center min-h-96 px-6 sm:px-16">
 									{/* Name */}
-									<h3 className="text-2xl font-bold text-black mb-4">{testimonial.name}</h3>
+									<h3 className="text-xl md:text-2xl font-bold text-black mb-4">{testimonial.name}</h3>
 
 									{/* Star Rating */}
 									<div className="flex justify-center gap-1 mb-6">
 										{Array.from({ length: 5 }).map((_, i) => (
-											<Star key={i} className={`w-6 h-6 ${i < Math.floor(testimonial.rating) ? "fill-yellow-400 text-yellow-400" : i < testimonial.rating ? "fill-yellow-400 text-yellow-400 opacity-50" : "text-gray-300"}`} />
+											<Star key={i} className={`w-4 h-4 md:w-6 md:h-6 ${i < Math.floor(testimonial.rating) ? "fill-yellow-400 text-yellow-400" : i < testimonial.rating ? "fill-yellow-400 text-yellow-400 opacity-50" : "text-gray-300"}`} />
 										))}
 									</div>
 
 									{/* Testimonial Text */}
-									<p className="text-lg text-gray-600 leading-relaxed max-w-2xl">&quot;{testimonial.text}&quot;</p>
+									<p className="text-md md:text-lg text-gray-600 leading-relaxed max-w-2xl">&quot;{testimonial.text}&quot;</p>
 								</div>
 							</CarouselItem>
 						))}

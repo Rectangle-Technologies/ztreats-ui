@@ -14,14 +14,36 @@ export default function PopularMenu() {
 			<div className="mx-auto max-w-7xl">
 				{/* Header */}
 				<div className="flex flex-col gap-8 lg:flex-row items-center justify-between lg:mb-12">
-					<div className="flex items-center gap-3 text-4xl sm:text-5xl font-bold font-[amaranth] relative">
-						<Image src="/assets/landing-page/Circle 47.png" height={500} width={500} alt="Circle" className="absolute w-10/11  -left-10 lg:-left-14  mt-10" />
-						<h2 className="">Popular</h2>
-						<h2 className="text-4xl sm:text-5xl font-bold">Menu</h2>
+
+					{/* Heading */}
+					<div className="flex items-center gap-3 text-4xl sm:text-5xl font-bold font-[amaranth]">
+
+						{/* Popular (with circle) */}
+						<div className="relative inline-block">
+
+							<span className="relative z-10">Popular</span>
+
+							<Image
+								src="/assets/landing-page/Circle 47.png"
+								width={500}
+								height={500}
+								alt="Circle"
+								className="absolute left-1/2 top-[85%] w-[140%] max-w-none -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0"
+							/>
+						</div>
+
+						<span>Menu</span>
 					</div>
-					<PaddedButton size="lg" className="bg-teal-800 hover:bg-teal-700 text-white text-base p-7" onClick={() => router.push('/products')}>
+
+					{/* Button */}
+					<PaddedButton
+						size="lg"
+						className="bg-teal-800 hover:bg-teal-700 text-white text-base p-7"
+						onClick={() => router.push("/products")}
+					>
 						View More
 					</PaddedButton>
+
 				</div>
 
 				{/* Product Grid */}
