@@ -17,8 +17,8 @@ export default function CTASection() {
 				<div className="absolute inset-0 bg-[#D9560E] opacity-40 pointer-events-none z-0"></div>
 
 				<div className="text-center max-w-2xl relative z-10">
-					<h2 className="text-4xl md:text-5xl font-bold font-[amaranth] text-white mb-6">Ready to Snack Smarter?</h2>
-					<p className="text-xl md:text-2xl text-white mb-8">Your order is just one text away.</p>
+					<h2 className="text-3xl md:text-5xl font-bold font-[amaranth] text-white mb-6">Ready to Snack Smarter?</h2>
+					<p className="text-lg md:text-2xl text-white mb-8">Your order is just one text away.</p>
 					<NextLink href={getWhatsAppUrl()}>
 						<PaddedButton size="xl" variant="outline" className="bg-transparent text-white hover:bg-gray-300">
 							Chat With Us
