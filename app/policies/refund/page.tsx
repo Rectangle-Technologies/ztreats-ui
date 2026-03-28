@@ -3,11 +3,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Return & Refund Policy | ZTreats",
 	description:
-		"Learn about ZTreats' return and refund policy. Your satisfaction is our priority.",
-	keywords: ["return policy", "refund policy", "ZTreats returns"],
+		"Learn about ZTreats' return and refund policy. Returns accepted for damaged or incorrect products within 24-48 hours of delivery.",
+	keywords: ["return policy", "refund policy", "ZTreats returns", "replacement", "damaged product"],
 	openGraph: {
 		title: "Return & Refund Policy | ZTreats",
-		description: "Learn about ZTreats' return and refund policy.",
+		description: "Learn about ZTreats' return and refund policy for damaged or incorrect orders.",
 		url: "https://ztreats.com/policies/refund",
 		type: "website",
 	},
@@ -22,26 +22,44 @@ export const metadata: Metadata = {
 
 export default function RefundPolicyPage() {
 	return (
-		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-			<h1 className="text-5xl font-bold font-[amaranth] mb-12">Return & Refund Policy</h1>
+		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+			<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-[amaranth] mb-8 lg:mb-12">Return &amp; Refund Policy</h1>
 
 			<div className="space-y-4 text-gray-700">
 				<p className="leading-relaxed">
-					Your satisfaction is our priority. If you&apos;re not completely happy with your purchase, we&apos;re here to help.
+					Due to the nature of food products, returns are limited and subject to the conditions below.
 				</p>
-				<h2 className="text-xl font-semibold mt-6 mb-3">Return Eligibility</h2>
-				<ul className="list-disc list-inside space-y-2 ml-4">
-					<li>Products must be returned within 7 days of delivery</li>
-					<li>Items must be unopened and in original packaging</li>
-					<li>Perishable items cannot be returned unless damaged or defective</li>
-					<li>Contact our support team to initiate a return request</li>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Return Eligibility</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Product received is damaged, or</li>
+					<li>Incorrect product was delivered</li>
 				</ul>
-				<h2 className="text-xl font-semibold mt-6 mb-3">Refund Process</h2>
-				<ul className="list-disc list-inside space-y-2 ml-4">
-					<li>Refunds will be processed within 5-7 business days after receiving the returned item</li>
-					<li>Refunds will be credited to the original payment method</li>
-					<li>Shipping charges are non-refundable unless the return is due to our error</li>
-					<li>For damaged or defective products, we offer full replacement or refund</li>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Return Request Window</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Requests must be raised within 24-48 hours of delivery.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Proof Requirement</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Customers must provide photos AND unboxing video as proof.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Non-Returnable Cases</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Product has been opened or consumed</li>
+					<li>Taste preferences or personal dislike</li>
+					<li>Minor variations in product appearance</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Natural Product Disclaimer</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>As our products are natural, variations in size, color, and taste may occur and should not be considered defects.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Refund / Replacement</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Replacement, or</li>
+					<li>Refund via UPI / bank transfer</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Processing Time</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Refunds or replacements will be processed within 5-7 working days after verification.</li>
 				</ul>
 			</div>
 		</div>
