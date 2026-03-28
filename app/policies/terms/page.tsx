@@ -3,11 +3,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Terms & Conditions | ZTreats",
 	description:
-		"Read ZTreats' Terms and Conditions. By using our website, you agree to be bound by these terms.",
-	keywords: ["terms and conditions", "terms of service", "ZTreats terms"],
+		"Read ZTreats' Terms and Conditions. Covers website usage, order acceptance, pricing, payments, cancellations, and jurisdiction.",
+	keywords: ["terms and conditions", "terms of service", "ZTreats terms", "order policy", "Surat"],
 	openGraph: {
 		title: "Terms & Conditions | ZTreats",
-		description: "Read ZTreats' Terms and Conditions for using our website and services.",
+		description: "Read ZTreats' Terms and Conditions for using our website and placing orders.",
 		url: "https://ztreats.com/policies/terms",
 		type: "website",
 	},
@@ -22,25 +22,50 @@ export const metadata: Metadata = {
 
 export default function TermsConditionsPage() {
 	return (
-		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-			<h1 className="text-5xl font-bold font-[amaranth] mb-12">Terms & Conditions</h1>
+		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+			<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-[amaranth] mb-8 lg:mb-12">Terms &amp; Conditions</h1>
 
 			<div className="space-y-4 text-gray-700">
 				<p className="leading-relaxed">
-					By accessing and using the ZTreats website, you agree to be bound by these Terms and Conditions. Please read them carefully before making a purchase.
+					By placing an order or accessing the ZTreats website, you agree to be bound by the following Terms and Conditions.
 				</p>
-				<h2 className="text-xl font-semibold mt-6 mb-3">General Terms</h2>
-				<ul className="list-disc list-inside space-y-2 ml-4">
-					<li>You must be at least 18 years old to make a purchase</li>
-					<li>All prices are listed in Indian Rupees (₹) and include applicable taxes</li>
-					<li>Product images are for illustration purposes; actual products may vary slightly</li>
-					<li>We reserve the right to modify prices and product availability without notice</li>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Website Usage</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>This website is intended for product display and informational purposes only.</li>
+					<li>Orders are placed manually via WhatsApp, phone, or Instagram.</li>
 				</ul>
-				<h2 className="text-xl font-semibold mt-6 mb-3">Order Acceptance</h2>
-				<ul className="list-disc list-inside space-y-2 ml-4">
-					<li>All orders are subject to availability and confirmation</li>
-					<li>We reserve the right to refuse or cancel any order at our discretion</li>
-					<li>Order confirmation will be sent via email upon successful placement</li>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Order Acceptance</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>ZTreats reserves the right to accept or refuse any order at its sole discretion.</li>
+					<li>Delivery timelines may vary, especially for customised orders.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Pricing</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>All prices are subject to change without prior notice.</li>
+					<li>Final pricing will be confirmed during order placement.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Payments</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>UPI</li>
+					<li>Cash on Delivery (COD)</li>
+					<li>Cash</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Order Cancellation</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Orders can be cancelled before payment is collected or confirmed.</li>
+					<li>Once payment is completed or the order is processed, cancellation may not be possible.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Intellectual Property</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>All content on this website, including images, text, and branding, is the property of ZTreats and may not be used without prior permission.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">User Eligibility</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>Users must be 18 years or older to place an order.</li>
+				</ul>
+				<h2 className="text-lg sm:text-xl font-semibold mt-6 mb-3">Jurisdiction</h2>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>All disputes are subject to the jurisdiction of courts in Surat, Gujarat.</li>
 				</ul>
 			</div>
 		</div>
